@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Pasillo 9</title>
+<meta name="description" content="Política de privacidad del juego Pasillo 9, de Pink Unicorn Game Development Studio.">
+<style>
+  :root {
+    --bg: #0b0910; --panel: #15111c; --line: #2a2236; --ink: #ece6f2; --muted: #a79bb6; --accent: #ff6ec7;
+    color-scheme: dark;
+  }
+  @media (prefers-color-scheme: light) {
+    :root { --bg: #fbf8fc; --panel: #ffffff; --line: #e4dbea; --ink: #1d1724; --muted: #5f5470; --accent: #b0247d; color-scheme: light; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 20px 64px; }
+  .eyebrow { margin: 0 0 6px; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  h1 { margin: 0 0 6px; font-size: clamp(28px, 6vw, 38px); line-height: 1.15; }
+  .date { margin: 0 0 28px; color: var(--muted); font-size: 14px; }
+  h2 { margin: 32px 0 8px; font-size: 19px; }
+  p, li { color: var(--ink); }
+  ul { padding-left: 20px; }
+  li + li { margin-top: 6px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+  th, td { text-align: left; vertical-align: top; padding: 9px 10px; border: 1px solid var(--line); }
+  th { background: var(--panel); font-weight: 600; }
+  .wrap-table { overflow-x: auto; }
+  a { color: var(--accent); }
+  .box { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Pink Unicorn Game Development Studio</p>
+  <h1>Política de privacidad de Pasillo 9</h1>
+  <p class="date">Última actualización: 29 de octubre de 2026</p>
+
+  <div class="box">
+    <p><strong>En resumen:</strong> Pasillo 9 no te pide cuenta, correo ni datos personales. Si guardas una puntuación, el nombre que escribas y tu puntuación se publican en el ranking mundial del juego, visible para todos los jugadores. El resto se queda en tu móvil.</p>
+  </div>
+
+  <h2>1. Quién es el responsable</h2>
+  <p>El juego Pasillo 9 (identificador de la app: <code>com.pinkunicorn.pasillo9</code>) lo desarrolla y publica Pink Unicorn Game Development Studio, un estudio independiente. Para cualquier cuestión sobre privacidad puedes escribir a <a href="mailto:pinkunicorn.gamestudio@gmail.com">pinkunicorn.gamestudio@gmail.com</a>.</p>
+
+  <h2>2. Qué datos se guardan solo en tu dispositivo</h2>
+  <p>Estos datos se guardan en el almacenamiento interno de la app, no salen de tu móvil y no tenemos acceso a ellos:</p>
+  <ul>
+    <li>Tus ajustes de sonido y vibración.</li>
+    <li>Si ya has completado el turno de formación (tutorial).</li>
+    <li>Tu ranking local: las 10 mejores partidas de ese dispositivo y el último nombre que escribiste.</li>
+    <li>Puntuaciones pendientes de subir al ranking mundial cuando no hay conexión (como máximo 5).</li>
+    <li>Un código técnico de sesión anónima para el ranking mundial (ver apartado 3).</li>
+  </ul>
+  <p>Todo se borra al desinstalar la app o al borrar sus datos desde los ajustes de Android.</p>
+
+  <h2>3. Qué datos se envían: el ranking mundial</h2>
+  <p>Solo se envían datos si tú decides guardar tu puntuación al final de una partida. En ese caso se envía:</p>
+  <div class="wrap-table">
+  <table>
+    <tr><th>Dato</th><th>Para qué</th><th>Quién lo ve</th></tr>
+    <tr><td>El nombre que escribas (máximo 12 caracteres)</td><td>Mostrarte en el ranking</td><td>Todos los jugadores</td></tr>
+    <tr><td>Puntuación, hora del turno alcanzada y si completaste el turno</td><td>Ordenar y mostrar el ranking</td><td>Todos los jugadores</td></tr>
+    <tr><td>Fecha de la partida y hora de envío</td><td>Ordenar el ranking y evitar envíos en cadena</td><td>Solo el estudio</td></tr>
+    <tr><td>Un identificador anónimo generado al azar</td><td>Limitar los envíos a uno cada 20 segundos por jugador y evitar abusos</td><td>Solo el estudio</td></tr>
+  </table>
+  </div>
+  <p><strong>No escribas tu nombre real ni datos personales en el nombre del ranking</strong>: es público. Usa un apodo.</p>
+  <p>El identificador anónimo no está vinculado a tu nombre real, tu correo, tu cuenta de Google ni a ningún otro dato tuyo. No usamos publicidad personalizada, analítica ni seguimiento.</p>
+
+  <h2>4. Dónde se guardan y quién los trata</h2>
+  <p>El ranking mundial funciona con Firebase (Cloud Firestore y Firebase Authentication con inicio de sesión anónimo), un servicio de Google que actúa como encargado del tratamiento. Los datos del ranking se guardan en servidores de Google en la Unión Europea. Al conectarse, Google puede tratar datos técnicos como la dirección IP para prestar el servicio y protegerlo. Puedes consultar cómo trata Google estos datos en <a href="https://firebase.google.com/support/privacy">la información de privacidad de Firebase</a>.</p>
+
+  <h2>5. Base legal y conservación</h2>
+  <p>Tratamos los datos del ranking porque tú lo pides al guardar tu puntuación (consentimiento) y para el funcionamiento del juego. Las puntuaciones se conservan mientras el ranking esté activo o hasta que pidas que se borren. El estudio puede eliminar en cualquier momento puntuaciones o nombres ofensivos o fraudulentos.</p>
+
+  <h2>6. Tus derechos</h2>
+  <p>Puedes pedir el acceso, la corrección o el borrado de tus puntuaciones del ranking mundial, y ejercer el resto de derechos que te reconoce el Reglamento General de Protección de Datos, escribiendo a <a href="mailto:pinkunicorn.gamestudio@gmail.com">pinkunicorn.gamestudio@gmail.com</a>. Indica el nombre que usaste, la puntuación y la fecha aproximada para poder localizarla. Si no estás conforme con la respuesta, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es">www.aepd.es</a>).</p>
+
+  <h2>7. Permisos de la app</h2>
+  <p>Pasillo 9 solo usa acceso a internet (para el ranking mundial) y la vibración del dispositivo (para los sustos; se puede desactivar dentro del juego). No accede a tu ubicación, contactos, cámara, micrófono, fotos ni archivos.</p>
+
+  <h2>8. Menores</h2>
+  <p>Pasillo 9 es un juego de terror que no está dirigido a menores de 13 años. No recogemos a sabiendas datos de menores. Si crees que un menor ha publicado datos personales en el ranking, escríbenos y los borraremos.</p>
+
+  <h2>9. Cambios en esta política</h2>
+  <p>Si el juego incorpora nuevas funciones que traten datos (por ejemplo, anuncios), actualizaremos esta página antes de que lleguen a la app e indicaremos la fecha de la última actualización arriba.</p>
+
+  <footer>Pink Unicorn Game Development Studio · <a href="../">Volver a la web del estudio</a></footer>
+</main>
+</body>
+</html>

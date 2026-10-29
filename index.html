@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pink Unicorn Game Development Studio</title>
+<meta name="description" content="Estudio independiente de videojuegos. Creadores de Pasillo 9.">
+<style>
+  :root { --bg: #000; --ink: #f4ecf8; --muted: #b9a6c8; --accent: #ff6ec7; --line: #2c1f36; color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 20px 56px; display: flex; flex-direction: column; gap: 28px; align-items: center; text-align: center; }
+  .logo { width: min(100%, 440px); height: auto; image-rendering: pixelated; }
+  .lead { margin: 0; color: var(--muted); max-width: 52ch; }
+  h2 { margin: 0; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); }
+  .game { display: flex; gap: 18px; align-items: center; text-align: left; border: 1px solid var(--line); border-radius: 12px; padding: 16px; width: 100%; max-width: 560px; background: #0d0812; }
+  .game img { width: 88px; height: 88px; border-radius: 18px; flex: none; }
+  .game h3 { margin: 0 0 4px; font-size: 20px; }
+  .game p { margin: 0 0 8px; color: var(--muted); font-size: 15px; }
+  .game a { color: var(--accent); font-size: 14px; }
+  footer { color: var(--muted); font-size: 14px; }
+  footer a { color: var(--accent); }
+  @media (max-width: 460px) { .game { flex-direction: column; text-align: center; } }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="logo.webp" alt="Pink Unicorn Game Development Studio" width="900" height="900">
+  <p class="lead">Estudio independiente de videojuegos. Hacemos juegos pequeños con mucho ambiente.</p>
+  <h2>Nuestros juegos</h2>
+  <article class="game">
+    <img src="pasillo9/icono.jpg" alt="" width="88" height="88">
+    <div>
+      <h3>Pasillo 9</h3>
+      <p>Juego de terror para Android. Eres Marcos, el vigilante nocturno del hospital San Gabriel, y la cámara 09 graba un pasillo que lleva doce años cerrado.</p>
+      <a href="pasillo9/privacidad.html">Política de privacidad</a>
+    </div>
+  </article>
+  <footer>Contacto: <a href="mailto:pinkunicorn.gamestudio@gmail.com">pinkunicorn.gamestudio@gmail.com</a></footer>
+</main>
+</body>
+</html>
